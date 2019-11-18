@@ -8,7 +8,9 @@ Frameworks for REST API:
   - CSS: used FontAwesome
   
   To run this first download this repo on to your system and place it in a folder.
-  Then open server.js and in the terminal type:
+  Then open server.js and in the terminal:
+  
+  cd to your directory where the project is stored and then type:
   
   node server.js
   
