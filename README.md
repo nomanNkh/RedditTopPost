@@ -8,6 +8,15 @@ Frameworks for REST API:
   - CSS: used FontAwesome
   
   To run this first download this repo on to your system and place it in a folder.
+ 
+  Now install Nodejs - https://nodejs.org/en/download/
+  Now install Expressjs Node fetch by opening the terminal and typing
+      
+        npm install express --save
+        
+        npm i node-fetch
+        
+        
   Then open server.js and in the terminal:
   
   cd to your directory where the project is stored and then type:
