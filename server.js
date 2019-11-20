@@ -4,6 +4,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT;
+//const port = 3000;
 app.use(express.static(__dirname));
 
 let request = require('request');
@@ -49,7 +50,7 @@ app.get('/api/getTopPost/:subreddit', (req, res) => {
     });
 });
 
-//app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
     
     
 
