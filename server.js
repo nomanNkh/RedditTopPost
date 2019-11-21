@@ -31,12 +31,14 @@ app.get('/api/getTopPost/:subreddit', (req, res) => {
             var author = '';
 
             //values from reddit api
-            if (topPost.data.children.length != 0) {
-                title += topPost.data.children[0].data.title;
-                text += topPost.data.children[0].data.selftext;
-                author += topPost.data.children[0].data.author;
+            if (topPost.data != null) {
+                if (topPost.data.children.length != 0) {
+                    title += topPost.data.children[0].data.title;
+                    text += topPost.data.children[0].data.selftext;
+                    author += topPost.data.children[0].data.author;
 
-            }        
+                }
+            }
 
             //send back to frontend script.js
             res.send({
